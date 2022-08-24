@@ -105,6 +105,9 @@ navbar:
     - name: 友链
       icon: fa-solid fa-link
       url: friends/
+    - name: 留言
+      icon: fa-solid fa-clipboard-question
+      url: board/
     - name: 关于
       icon: fa-solid fa-info-circle
       url: about/
@@ -716,7 +719,7 @@ plugins:
 
   # https://scrollrevealjs.org/api/reveal.html
   scrollreveal:
-    enable: #true
+    enable: true
     js: volantis-static/libs/scrollreveal/dist/scrollreveal.min.js # https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js
     distance: 32px
     duration: 800 # ms
@@ -726,7 +729,7 @@ plugins:
   ######## Plugins for SEO:
   # npm i hexo-wordcount
   wordcount:
-    enable: #true
+    enable: true
 
   ######## Plugins for ...
   # Button Ripple Effect
@@ -754,7 +757,7 @@ plugins:
     duration: 10000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
-      - volantis-static/media/wallpaper/minimalist/2020/001.webp
+      - /img/background/background.jpg
 
 
   # APlayer is only available in mainland China.
@@ -856,7 +859,7 @@ plugins:
     css: volantis-static/libs/fcircle/fcircle.css
     js: volantis-static/libs/fcircle/fcircle.js
 
-  # 消息提示 
+  # 消息提示
   # izitoast@1.4.0
   message:
     enable: true
