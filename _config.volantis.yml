@@ -106,7 +106,7 @@ navbar:
       icon: fa-solid fa-link
       url: friends/
     - name: 留言
-      icon: fa-solid fa-clipboard-question
+      icon: fa-solid fa-clipboard
       url: board/
     - name: 关于
       icon: fa-solid fa-info-circle
@@ -621,7 +621,8 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, social, analytics, info, copyright]
+  layout: [hello, aplayer, social, analytics, info, copyright, icp, github]
+  hello: 'Oh Hi! Welcome Back!'
   social:
     - icon: fa-solid fa-rss
       url: https://www.hanbiwolf.top/rss.xml
@@ -635,6 +636,8 @@ site_footer:
   copyright: '[Copyright © 2022 - Now HanBiWolf](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
+  icp: '<a href="https://icp.gov.moe/?keyword=20228500">萌ICP备20228500号</a>'
+  github: '<a href="https://github.com/HanBiWolf/HBW-Blog-Hexo-Volantis/">本站GitHub</a>'
 ############################### Site Footer ############################### > end
 
 ############################### Plugins ############################### > start
@@ -1242,7 +1245,7 @@ custom_css:
 
 ############################### Analytics ############################### > start
 analytics:
-  busuanzi: #volantis-static/libs/busuanzi/js/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  busuanzi: volantis-static/libs/busuanzi/js/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
   leancloud: # 请使用自己的 id & key 以防止数据丢失
     app_id: # u9j57bwJod4EDmXWdxrwuqQT-MdYXbMMI
     app_key: # jfHtEKVE24j0IVCGHbvuFClp
@@ -1288,9 +1291,9 @@ structured_data:
   data:
     person:
       sns:
-        - https://github.com/volantis-x
+        - https://github.com/HanBiWolf/
     logo:
-      path: volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
+      path: /img/favicon/favicon.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
       width: 192
       height: 192
 ############################### Structured Data ############################### > end
