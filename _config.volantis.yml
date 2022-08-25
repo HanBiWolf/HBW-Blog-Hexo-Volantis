@@ -641,7 +641,7 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, hello, social, info, copyright, icp, github]
+  layout: [aplayer, social, hello, copyright, icp, github]
   hello: 'Oh Hi! Welcome Back!'
   social:
     - icon: fa-solid fa-rss
