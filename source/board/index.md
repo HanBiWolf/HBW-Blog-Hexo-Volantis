@@ -1,9 +1,8 @@
 ---
 layout: page
-title: board
+title: 留言
 date: 2022-08-24 22:47:38
 keywords:
-    - 留言
 description: 来这里留下足迹吧!
 headimg:
 pin:
