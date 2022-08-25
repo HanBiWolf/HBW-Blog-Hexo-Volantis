@@ -641,17 +641,13 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [hello, aplayer, social, analytics, info, copyright, icp, github]
+  layout: [aplayer, hello, social, info, copyright, icp, github]
   hello: 'Oh Hi! Welcome Back!'
   social:
     - icon: fa-solid fa-rss
       url: https://www.hanbiwolf.top/rss.xml
   # site source
   source: https://github.com/volantis-x/volantis-docs/
-  # analytics using leancloud
-  analytics: >
-    <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
-    <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
   copyright: '[Copyright © 2022 - Now HanBiWolf](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
