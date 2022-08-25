@@ -130,14 +130,34 @@ cover:
   subtitle: '憨憨狼的互联网小窝'
   search: 来点啥 # search bar placeholder
   features:
-    - name: 归档
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
-      url: /archives/
     - name: 源码
       icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      img: #volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
       url: https://github.com/HanBiWolf/HBW-Blog-Hexo-Volantis/
+    - name: 归档
+      icon: #
+      img: #volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      url: /archives/
+    - name: 分类
+      icon: #
+      img: #
+      url: /categories/
+    - name: 标签
+      icon: #
+      img: #
+      url: /tags/
+    - name: 留言
+      icon: #
+      img: #
+      url: /board/
+    - name: 友链
+      icon: #
+      img: #
+      url: /friends/
+    - name: 关于
+      icon: #
+      img: #
+      url: /about/
 ############################### Cover ############################### > end
 
 pages:
@@ -966,7 +986,6 @@ rightmenus:
     navigation:
       - {id: 'left', name: '转到上一页', icon: 'fa-solid fa-arrow-left', event: 'history.back()', group: 'navigation'}
       - {id: 'right', name: '转到下一页', icon: 'fa-solid fa-arrow-right', event: 'history.forward()', group: 'navigation'}
-      - {id: 'redo', name: '刷新当前页面', icon: 'fa-solid fa-redo', event: 'window.location.reload()', group: 'navigation'}
       - {id: 'up', name: '回到顶部', icon: 'fa-solid fa-arrow-up', event: 'VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)', group: 'navigation'}
       #- {id: 'home', name: '回到首页', icon: 'fa-solid fa-home', link: '/', group: 'navigation'}
     # 文本输入框相关组件
