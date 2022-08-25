@@ -1,6 +1,7 @@
 ---
 layout: friends
 title: 友链
+author: HanBiWolf
 ---
 
 来康康咱的朋友!
