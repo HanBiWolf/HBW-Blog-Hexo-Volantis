@@ -5,9 +5,16 @@ jobs:
   build:
     name: calibreapp/image-actions
     runs-on: ubuntu-latest
+
+    env:
+      GPG_PRIVATE: ${{ secrets.GPG_PRIVATE }}
+      GPG_PUBLIC: ${{ secrets.GPG_PUBLIC }}
+      ID_RSA: ${{ secrets.ID_RSA }}
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
+
       - name: Compress Images
         id: calibre
         uses: calibreapp/image-actions@main
@@ -18,6 +25,23 @@ jobs:
           jpegProgressive: false
           pngQuality: '80'
           webpQuality: '80'
+
+      - name: Import GPG Keys
+        run: |
+          echo "$GPG_PUBLIC" > ./HBWBlog_public.asc
+          gpg --import ./HBWBlog_public.asc
+          echo "$GPG_PRIVATE" > ./HBWBlog_SECRET.asc
+          gpg --allow-secret-key-import --import ./HBWBlog_SECRET.asc
+
+      - name: Set Git Config
+        run: |
+          git config --global user.signingkey 77D1E779184BB2BFB1C737B5075CA7F6CC559CC2
+          git config --global init.defaultBranch main
+          git config --global commit.gpgsign true
+          git config --global user.email "hanbiwolf@outlook.com"
+          git config --global user.name "HanBiWolf"
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
       - name: Create New Pull Request If Needed
         if: steps.calibre.outputs.markdown != ''
         uses: peter-evans/create-pull-request@v3
