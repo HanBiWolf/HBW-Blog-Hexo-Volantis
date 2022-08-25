@@ -40,9 +40,6 @@ jobs:
           git config --global commit.gpgsign true
           git config --global user.email "hanbiwolf@outlook.com"
           git config --global user.name "HanBiWolf"
-          mkdir ~./.ssh/
-          echo " " > ~/.ssh/known_hosts
-          ssh-keyscan github.com > ~/.ssh/known_hosts
 
       - name: Create New Pull Request If Needed
         if: steps.calibre.outputs.markdown != ''
