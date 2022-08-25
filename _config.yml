@@ -141,6 +141,9 @@ hexo_submit_urls_to_search_engine:
   replace_with: https://www.hanbiwolf.top
 
 deploy:
+  - type: cjh_google_url_submitter
+  - type: cjh_bing_url_submitter
+  - type: cjh_baidu_url_submitter
   - type: 'git'
     repo: git@github.com:HanBiWolf/HBW-Blog-Hexo-Volantis.git
     branch: site
