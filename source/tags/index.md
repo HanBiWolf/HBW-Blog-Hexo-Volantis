@@ -1,5 +1,5 @@
 ---
 layout: tag
-index: true
+comments: false
 title: 标签
 ---
