@@ -130,10 +130,10 @@ cover:
   subtitle: '憨憨狼的互联网小窝'
   search: 来点啥 # search bar placeholder
   features:
-    - name: 源码
+    - name: 主页
       icon: #
-      img: #volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
-      url: https://github.com/HanBiWolf/HBW-Blog-Hexo-Volantis/
+      img: #
+      url: /
     - name: 归档
       icon: #
       img: #volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
@@ -158,6 +158,10 @@ cover:
       icon: #
       img: #
       url: /about/
+    - name: 源码
+      icon: #
+      img: #volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: https://github.com/HanBiWolf/HBW-Blog-Hexo-Volantis/ 
 ############################### Cover ############################### > end
 
 pages:
@@ -795,7 +799,7 @@ plugins:
     fixed: false      # enable fixed mode
     theme: '#1BCDFC'  # main color
     autoplay: false   # audio autoplay
-    order: list       # player play order, values: 'list', 'random'
+    order: random       # player play order, values: 'list', 'random'
     loop: all         # player loop play, values: 'all', 'one', 'none'
     volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
     list_max_height: 320px # list max height
