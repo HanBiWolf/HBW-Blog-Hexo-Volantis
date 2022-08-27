@@ -558,7 +558,7 @@ sidebar:
     # tagcloud widget
     tagcloud:
       class: tagcloud
-      display: [desktop, mobile] # [desktop, mobile]
+      display: [desktop] # [desktop, mobile]
       header:
         icon: fa-solid fa-tags
         title: 热门标签
