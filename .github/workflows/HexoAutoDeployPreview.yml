@@ -13,6 +13,9 @@ jobs:
       GPG_PRIVATE: ${{ secrets.GPG_PRIVATE }}
       GPG_PUBLIC: ${{ secrets.GPG_PUBLIC }}
       ID_RSA: ${{ secrets.ID_RSA }}
+      GSC: ${{ secrets.GSC }}
+      BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+      BING_TOKEN: ${{ secrets.BING_TOKEN }}
 
     steps:
       - name: Checkout Source
@@ -57,10 +60,9 @@ jobs:
           echo "$GPG_PRIVATE" > ./HBWBlog_SECRET.asc
           gpg --allow-secret-key-import --import ./HBWBlog_SECRET.asc
 
-      - name: Replace Google Deployer Setting
+      - name: Import Google Search Console Key File
         run: |
-          sed 's/google: 1/google: 0/g' ./_config.yml
-          sed 's/google_key_file: GSC/google_key_file:/g' ./_config.yml
+          echo "$GSC" > ./GSC.json
 
       - name: Set Git Config
         run: |
