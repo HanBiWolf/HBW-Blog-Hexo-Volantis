@@ -57,6 +57,10 @@ jobs:
           echo "$GPG_PRIVATE" > ./HBWBlog_SECRET.asc
           gpg --allow-secret-key-import --import ./HBWBlog_SECRET.asc
 
+      - name: Import Google Search Console Key File
+        run: |
+          echo " " > ./GSC.json
+
       - name: Set Git Config
         run: |
           git config --global user.signingkey 77D1E779184BB2BFB1C737B5075CA7F6CC559CC2
