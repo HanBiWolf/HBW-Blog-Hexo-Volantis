@@ -2,6 +2,7 @@
 layout: friends
 title: 友链
 author: HanBiWolf
+index: true
 ---
 
 来康康咱的朋友!
