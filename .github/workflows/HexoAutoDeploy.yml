@@ -18,7 +18,6 @@ jobs:
       GSC: ${{ secrets.GSC }}
       BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
       BING_TOKEN: ${{ secrets.BING_TOKEN }}
-      BRANCH: site
 
     steps:
       - name: Checkout Source
@@ -76,9 +75,9 @@ jobs:
           git config --global user.name "HanBiWolf"
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-      - name: Replace Branch Name In Deploy Config
+      - name: Replace Branch Name In Deploy Config With "site"
         run: |
-          sed -i 's/BRANCH_Name/$BRANCH/g' ./_config.yml
+          sed -i 's/BRANCH_Name/site/g' ./_config.yml
 
       - name: Clean Public Directory
         run: |

@@ -13,7 +13,6 @@ jobs:
       GPG_PRIVATE: ${{ secrets.GPG_PRIVATE }}
       GPG_PUBLIC: ${{ secrets.GPG_PUBLIC }}
       ID_RSA: ${{ secrets.ID_RSA }}
-      BRANCH: sitepreview
 
     steps:
       - name: Checkout Source
@@ -67,9 +66,9 @@ jobs:
           git config --global user.name "HanBiWolf"
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-      - name: Replace Branch Name In Deploy Config
+      - name: Replace Branch Name In Deploy Config With "sitepreview"
         run: |
-          sed -i 's/BRANCH_Name/$BRANCH/g' ./_config.yml
+          sed -i 's/BRANCH_Name/sitepreview/g' ./_config.yml
 
       - name: Replace Deployer Settings
         run: |
