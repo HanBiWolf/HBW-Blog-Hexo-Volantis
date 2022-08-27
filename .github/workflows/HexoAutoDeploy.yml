@@ -78,7 +78,7 @@ jobs:
 
       - name: Replace Branch Name In Deploy Config
         run: |
-          sed 's/BRANCH_Name/$BRANCH/g' ./_config.yml
+          sed -i 's/BRANCH_Name/$BRANCH/g' ./_config.yml
 
       - name: Clean Public Directory
         run: |

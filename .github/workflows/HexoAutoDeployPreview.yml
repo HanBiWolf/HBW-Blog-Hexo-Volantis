@@ -73,9 +73,9 @@ jobs:
 
       - name: Replace Deployer Settings
         run: |
-          sed - i 's/google: 1/google: 0/g' ./_config.yml
-          sed - i 's/bing: 1/bing: 0/g' ./_config.yml
-          sed - i 's/baidu: 1/baidu: 0/g' ./_config.yml
+          sed -i 's/google: 1/google: 0/g' ./_config.yml
+          sed -i 's/bing: 1/bing: 0/g' ./_config.yml
+          sed -i 's/baidu: 1/baidu: 0/g' ./_config.yml
 
       - name: Clean Public Directory
         run: |
