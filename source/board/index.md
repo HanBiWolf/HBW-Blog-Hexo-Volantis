@@ -7,6 +7,7 @@ description: 来这里留下足迹吧!
 headimg:
 pin:
 author: HanBiWolf
+index: true
 ---
 ## 欢迎!!
 

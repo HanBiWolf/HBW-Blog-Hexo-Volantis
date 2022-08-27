@@ -1279,10 +1279,10 @@ seo:
   use_excerpt_as_description: true
   robots:
     home_first_page: index,follow
-    home_other_pages: noindex,follow
-    archive: noindex,follow
-    category: noindex,follow
-    tag: noindex,follow
+    home_other_pages: index,follow
+    archive: index,follow
+    category: index,follow
+    tag: index,follow
     # robots can be written in front-matter
 ############################### SEO ############################### > end
 
