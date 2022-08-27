@@ -1,10 +1,8 @@
-name: Hexo Auto Deploy
+name: Hexo Auto Deploy Preview
 
 on:
   push:
-    branches: [ "main" ]
-  schedule:
-    - cron: '0 * * * *'
+    branches: [ "dev" ]
   workflow_dispatch:
 
 jobs:
@@ -16,15 +14,14 @@ jobs:
       GPG_PUBLIC: ${{ secrets.GPG_PUBLIC }}
       ID_RSA: ${{ secrets.ID_RSA }}
       GSC: ${{ secrets.GSC }}
-      BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
-      BING_TOKEN: ${{ secrets.BING_TOKEN }}
-      BRANCH: site
+      BRANCH: sitepreview
+
 
     steps:
       - name: Checkout Source
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: dev
 
       - name: Compress Images
         uses: calibreapp/image-actions@main
