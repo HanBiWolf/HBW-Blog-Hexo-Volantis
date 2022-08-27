@@ -1,10 +1,8 @@
-name: Hexo Auto Deploy
+name: Hexo Auto Deploy Preview
 
 on:
   push:
-    branches: [ "main" ]
-  schedule:
-    - cron: '0 * * * *'
+    branches: [ "dev" ]
   workflow_dispatch:
 
 jobs:
@@ -15,15 +13,12 @@ jobs:
       GPG_PRIVATE: ${{ secrets.GPG_PRIVATE }}
       GPG_PUBLIC: ${{ secrets.GPG_PUBLIC }}
       ID_RSA: ${{ secrets.ID_RSA }}
-      GSC: ${{ secrets.GSC }}
-      BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
-      BING_TOKEN: ${{ secrets.BING_TOKEN }}
 
     steps:
       - name: Checkout Source
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: dev
 
       - name: Compress Images
         uses: calibreapp/image-actions@main
@@ -62,10 +57,6 @@ jobs:
           echo "$GPG_PRIVATE" > ./HBWBlog_SECRET.asc
           gpg --allow-secret-key-import --import ./HBWBlog_SECRET.asc
 
-      - name: Import Google Search Console Key File
-        run: |
-          echo "$GSC" > ./GSC.json
-
       - name: Set Git Config
         run: |
           git config --global user.signingkey 77D1E779184BB2BFB1C737B5075CA7F6CC559CC2
@@ -75,9 +66,15 @@ jobs:
           git config --global user.name "HanBiWolf"
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-      - name: Replace Branch Name In Deploy Config With "site"
+      - name: Replace Branch Name In Deploy Config With "sitepreview"
         run: |
-          sed -i 's/BRANCH_Name/site/g' ./_config.yml
+          sed -i 's/BRANCH_Name/sitepreview/g' ./_config.yml
+
+      - name: Replace Deployer Settings
+        run: |
+          sed -i 's/google: 1/google: 0/g' ./_config.yml
+          sed -i 's/bing: 1/bing: 0/g' ./_config.yml
+          sed -i 's/baidu: 1/baidu: 0/g' ./_config.yml
 
       - name: Clean Public Directory
         run: |
