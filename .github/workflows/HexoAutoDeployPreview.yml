@@ -57,9 +57,9 @@ jobs:
           echo "$GPG_PRIVATE" > ./HBWBlog_SECRET.asc
           gpg --allow-secret-key-import --import ./HBWBlog_SECRET.asc
 
-      - name: Import Google Search Console Key File
+      - name: Replace Google Deployer Setting
         run: |
-          echo " " > ./GSC.json
+          sed 's/google: 1/google: 0/g' ./_config.yml
 
       - name: Set Git Config
         run: |
