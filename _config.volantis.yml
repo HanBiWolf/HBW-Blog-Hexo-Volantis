@@ -81,7 +81,7 @@ scroll_smooth: true
 ############################### Navigation Bar ############################### > start
 # 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
 navbar:
-  visiable: auto # always, auto
+  visiable: always # always, auto
   logo: # choose [img] or [icon + title]
     img: #volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
     icon:
@@ -130,38 +130,38 @@ cover:
   subtitle: '憨憨狼的互联网小窝'
   search: 来点啥 # search bar placeholder
   features:
-    - name: 主页
-      icon: #
-      img: #
-      url: /
-    - name: 归档
-      icon: #
-      img: #volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
-      url: /archives/
-    - name: 分类
-      icon: #
-      img: #
-      url: /categories/
-    - name: 标签
-      icon: #
-      img: #
-      url: /tags/
-    - name: 留言
-      icon: #
-      img: #
-      url: /board/
-    - name: 友链
-      icon: #
-      img: #
-      url: /friends/
-    - name: 关于
-      icon: #
-      img: #
-      url: /about/
-    - name: 源码
-      icon: #
-      img: #volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
-      url: https://github.com/HanBiWolf/HBW-Blog-Hexo-Volantis/ 
+    #- name: 主页
+    #  icon: #
+    #  img: #
+    #  url: /
+    #- name: 归档
+    #  icon: #
+    #  img: #volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+    #  url: /archives/
+    #- name: 分类
+    #  icon: #
+    #  img: #
+    #  url: /categories/
+    #- name: 标签
+    #  icon: #
+    #  img: #
+    #  url: /tags/
+    #- name: 留言
+    #  icon: #
+    #  img: #
+    #  url: /board/
+    #- name: 友链
+    #  icon: #
+    #  img: #
+    #  url: /friends/
+    #- name: 关于
+    #  icon: #
+    #  img: #
+    #  url: /about/
+    #- name: 源码
+    #  icon: #
+    #  img: #volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+    #  url: https://github.com/HanBiWolf/HBW-Blog-Hexo-Volantis/ 
 ############################### Cover ############################### > end
 
 pages:
