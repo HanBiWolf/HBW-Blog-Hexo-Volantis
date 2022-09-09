@@ -609,7 +609,7 @@ sidebar:
             text: '本站总访问量：'
             unit: '次'
         lastupd:
-          enable: true
+          enable: false
           friendlyShow: true    # 更友好的时间显示
           text: '最后活动时间：'
           unit: '日'
