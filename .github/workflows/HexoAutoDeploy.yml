@@ -75,10 +75,6 @@ jobs:
           git config --global user.name "HanBiWolf"
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-      - name: Replace Branch Name In Deploy Config With "site"
-        run: |
-          sed -i 's/BRANCH_Name/site/g' ./_config.yml
-
       - name: Clean Public Directory
         run: |
           hexo clean
