@@ -146,4 +146,4 @@ deploy:
   - type: cjh_baidu_url_submitter
   - type: 'git'
     repo: git@github.com:HanBiWolf/HBW-Blog-Hexo-Volantis.git
-    branch: BRANCH_Name  #在Action进行时替换
+    branch: site
