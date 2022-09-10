@@ -26,6 +26,9 @@
 
 ## 关于许可
 仓库内的文章均使用 CC BY-SA 4.0 协议发布
+
 **请 规 范 转 载**
+
 *请注明创作者和网站!*
+
 [LICENSE文件](https://github.com/HanBiWolf/HBW-Blog-Hexo-Volantis/blob/main/LICENSE)
