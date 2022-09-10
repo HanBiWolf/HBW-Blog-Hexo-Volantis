@@ -23,11 +23,11 @@
 
 自动构建: [GitHub Action](https://github.com/HanBiWolf/HBW-Blog-Hexo-Volantis/actions)
 
-    [GitHub Action Docs](https://docs.github.com/cn/actions)
+[GitHub Action Docs](https://docs.github.com/cn/actions)
 
 自动部署: [CloudFlare](https://www.cloudflare.com)
 
-    [CloudFlare Page](https://developers.cloudflare.com/pages/)
+[CloudFlare Page](https://developers.cloudflare.com/pages/)
 
 ## 关于许可
 仓库内的文章均使用 CC BY-SA 4.0 协议发布
