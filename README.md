@@ -1,13 +1,14 @@
 # HBW-Blog-Hexo-Volantis
 
 ## 这是什么?
-这个仓库有两个主要分支
+这个仓库有三个主要分支
 
-其中main分支为存放hexo文件夹的,
-部分涉及隐私的内容设置使用GitHub Secret - Action的方式存放
+main分支为存放hexo文件夹的,
 
 而site分支则是存放hexo生成的文件的(即平时生成的public文件夹)
 而CloudFlare Page会检查该分支的更新并从此分支部署网页
+
+dev分支则是平时本地修改时使用,然后改完合并到main
 
 ## 关于网站
 该网站创作者:
