@@ -931,12 +931,12 @@ plugins:
       notice: true                        # 唤醒原右键菜单的通知
 
   # 聊天功能
-  chat_service: tidio # tidio or gitter
+  chat_service: # tidio or gitter
 
   # Tidio
   # https://www.tidio.com/
   tidio:
-    id: cbjshctupzjznwrkro93htyzeo7am6ot
+    id: xxxxxxxxxxxxxxxxx
 
   # Gitter
   # https://gitter.im
