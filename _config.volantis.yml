@@ -848,12 +848,12 @@ plugins:
     # 不支持 Pjax
     # 配置项按照yml格式继续填写即可
     js: https://unpkg.com/artitalk
-    appId: ogP8qj3veMh0LFpFWMPOyF0X-MdYXbMMI # your appID
-    appKey: nHXLd3N3Jgh460t2iRQKWAtr # your appKEY
+    appId: v9QDZkmrPODncCIRn0010mri-MdYXbMMI # your appID
+    appKey: DB9v03g32tyD9tXZGbz4waqt # your appKEY
     # serverURL:  #leancloud绑定的api访问域名，使用国际版的话不需要填写
-    # lang: # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
+    lang: zh # 语言设置，zh为汉语，en为英语，es为西班牙语。默认为汉语
     # pageSize: #每页说说的显示数量
-    # shuoPla: #在编辑说说的输入框中的占位符
+    shuoPla: Hi!写点什么吧! #在编辑说说的输入框中的占位符
     # avatarPla: #自定义头像url的输入框的占位符
     # motion: #加载动画的开关，1为开，0为关，默认为开
     # bgImg: #说说输入框背景图片url
