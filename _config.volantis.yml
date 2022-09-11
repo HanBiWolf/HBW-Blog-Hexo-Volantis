@@ -648,13 +648,27 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, social, hello, copyright, icp, github]
-  hello: 'Oh Hi! Welcome Back!'
+  layout: [social, hello, copyright, icp, github]
+  hello: ' Oh Hi! Welcome Back!  '
   social:
     - icon: fa-solid fa-rss
-      url: https://www.hanbiwolf.top/rss.xml
+      url: https://www.hanbiwolf.top/rss2.xml
+    - icon: fa-solid fa-atom-simple
+      url: https://www.hanbiwolf.top/atom.xml
+    - icon: fa-solid fa-sitemap
+      url: https://www.hanbiwolf.top/sitemap.xml
+    - icon: fa-brands fa-bilibili
+      url: https://space.bilibili.com/482416644
+    - icon: fa-brands fa-github
+      url: https://github.com/HanBiWolf
+    - icon: fa-brands fa-youtube
+      url: https://www.youtube.com/channel/UCMzWcUFINYgKYzgVu81bEAw
+    - icon: fa-brands fa-twitter
+      url: https://twitter.com/HanBiWolf
+    - icon: fa-solid fa-envelope
+      url: mailto:hanbiwolf@outlook.com
   # site source
-  source: https://github.com/volantis-x/volantis-docs/
+  source: https://github.com/HanBiWolf/HBW-Blog-Hexo-Volantis/
   # site copyright
   copyright: '[Copyright © 2022 - Now HanBiWolf](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
@@ -820,7 +834,6 @@ plugins:
     nprogress: volantis-static/libs/nprogress/nprogress.js # https://unpkg.com/nprogress@0.2.0/nprogress.min.js
     banUrl:              # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
       - '/shuoshuo/'   # artitalk 不支持 pjax
-      # - '/bbtalk/'     # bbtalk 不支持 pjax
 
   # 暗黑模式 darkmode
   # 开关按钮：在 navbar.menu 中添加：
@@ -918,12 +931,12 @@ plugins:
       notice: true                        # 唤醒原右键菜单的通知
 
   # 聊天功能
-  chat_service: # tidio or gitter
+  chat_service: tidio # tidio or gitter
 
   # Tidio
   # https://www.tidio.com/
   tidio:
-    id: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    id: cbjshctupzjznwrkro93htyzeo7am6ot
 
   # Gitter
   # https://gitter.im
