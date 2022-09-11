@@ -140,6 +140,24 @@ hexo_submit_urls_to_search_engine:
   find_what: http://hanbiwolf.github.io/
   replace_with: https://www.hanbiwolf.top
 
+feed:
+  enable: true
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss2.xml
+  limit: 50
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
 deploy:
   - type: cjh_google_url_submitter
   - type: cjh_bing_url_submitter
