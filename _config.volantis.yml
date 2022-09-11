@@ -102,6 +102,9 @@ navbar:
         - name: 归档
           icon: fa-solid fa-archive
           url: archives/
+        - name: 说说
+          icon: fa-solid fa-pen
+          url: shuoshuo/
     - name: 友链
       icon: fa-solid fa-link
       url: friends/
