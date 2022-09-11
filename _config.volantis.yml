@@ -819,7 +819,7 @@ plugins:
     animation: false # false, nprogress, circle
     nprogress: volantis-static/libs/nprogress/nprogress.js # https://unpkg.com/nprogress@0.2.0/nprogress.min.js
     banUrl:              # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
-      # - '/artitalk/'   # artitalk 不支持 pjax
+      - '/shuoshuo/'   # artitalk 不支持 pjax
       # - '/bbtalk/'     # bbtalk 不支持 pjax
 
   # 暗黑模式 darkmode
