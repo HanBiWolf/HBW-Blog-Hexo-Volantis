@@ -652,8 +652,6 @@ site_footer:
   hello: ' Oh Hi! Welcome Back!  '
   social:
     - icon: fa-solid fa-rss
-      url: https://www.hanbiwolf.top/rss2.xml
-    - icon: fa-solid fa-atom-simple
       url: https://www.hanbiwolf.top/atom.xml
     - icon: fa-solid fa-sitemap
       url: https://www.hanbiwolf.top/sitemap.xml
