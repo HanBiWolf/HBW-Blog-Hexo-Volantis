@@ -98,6 +98,8 @@ pagination_dir: page
 ## include:/exclude: options only apply to the 'source/' folder
 include:
 exclude:
+  - source/volantis-static/
+  - volantis-static/
 ignore:
 
 # Extensions
