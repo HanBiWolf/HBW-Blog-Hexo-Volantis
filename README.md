@@ -1,5 +1,7 @@
 # HBW-Blog-Hexo-Volantis
 
+**该仓库被弃用,新的仓库: https://github.com/HanBiWolf/HBW-Blog-Hexo-Fluid **
+
 ## 这是什么?
 这个仓库有两个主要分支
 
